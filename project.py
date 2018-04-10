@@ -94,37 +94,7 @@ print(y_test)
 
 
 
-#class MultiColumnLabelEncoder:
-#    def __init__(self,columns = None):
-#        self.columns = columns # array of column names to encode
-#
-#    def fit(self,p,y=None):
-#        return self # not relevant here
-#
-#    def transform(self,p):
-#        
-#      
-#      #  Transforms columns of X specified in self.columns using
-#       # LabelEncoder(). If no columns specified, transforms all
-#        #columns in X.
-#        
-#        output = p.copy()
-#        if self.columns is not None:
-#            for col in self.columns:
-#                output[col] = LabelEncoder().fit_transform(output[col])
-#        else:
-#            for colname,col in output.iteritems():
-#                output[colname] = LabelEncoder().fit_transform(col)
-#        return output
-#
-#    def fit_transform(self,p,y=None):
-#        return self.fit(p,y).transform(p)
-#
-#MultiColumnLabelEncoder(columns = ['YEAR', 'MAY', 'JUN', 'JUL']).fit_transform(p)
-#
-#
-#le = preprocessing.LabelEncoder()
-#le.fit(p)
+
 
 from sklearn.decomposition import PCA 
 pca = PCA(n_components=4)
