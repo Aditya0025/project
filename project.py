@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import sklearn 
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 file =pd.read_csv('Desktop/datafile.csv')
 file.head()
@@ -142,44 +142,6 @@ clf5.score(X_test,y_test)
 
 plt.plot(clf1,clf2,clf3,clf4,clf5)
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
